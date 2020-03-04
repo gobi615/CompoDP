@@ -9,6 +9,7 @@ public class MallardDuck implements Quackable{
 
 	public MallardDuck() {
 		this.observable = new Observable(this);
+		System.out.println("mallard called");
 	}
 
 	@Override

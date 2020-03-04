@@ -8,14 +8,11 @@ public class GooseAdapter implements Quackable{
 	
 	Observable observable = null;
 
-	public GooseAdapter() {
-		this.observable = new Observable(this);
-	}
-	
 	Goose goose = null;
 	
 	public GooseAdapter(Goose goose) {
 		this.goose = goose;
+		this.observable = new Observable(this);
 	}
 
 	@Override
